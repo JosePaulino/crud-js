@@ -5,62 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
     <title>Crud Js</title>
   </head>
   <body>
     <div class="topo"><h1>Cadastro de alunos</h1></div>
 
-    <section id="table">
-      <form method="post">
-        <div id="input-data">
-          <input
-            class="input-text"
-            type="text"
-            id="nomeid"
-            placeholder="Nome"
-            required
-          />
-          <input
-            class="input-text"
-            type="email"
-            id="emailid"
-            placeholder="Email"
-            required
-          />
-          <input
-            class="input-text"
-            type="tel"
-            id="foneid"
-            placeholder="(xx)xx-xx-xx-xx"
-            required
-          />
-          <input
-            class="input-text"
-            type="text"
-            name="curso"
-            id="cursoid"
-            placeholder="Curso"
-            required
-          />
-          <input
-            class="input-btn"
-            type="submit"
-            class="enviar"
-            onclick="return addToTable()"
-            value="Enviar"
-          />
-        </div>
-      </form>
-      <table class="table">
-        <tr id="0">
-          <th>ID</th>
-          <th>Nome</th>
-          <th>Email</th>
-          <th>Telefone</th>
-          <th>Curso</th>
-          <th>Ação</th>
-        </tr>
-      </table>
-    </section>
+      <section id="table">
+        <form method="POST">
+          <div id="input-data">
+            <input class="input-text" type="text" id="nome" placeholder="Nome" required />
+            <input class="input-text" type="email" id="email" placeholder="Email" required />
+            <input class="input-text" type="number" id="fone" placeholder="(xx)x-xxxx-xxxx" required />
+            <input class="input-text" type="text" name="curso" id="curso" placeholder="Curso" required />
+            <input class="input-btn" type="submit" value="Enviar" onclick="return addTabela()"  />
+          </div>
+        </form>
+
+        <table id="myTable">
+          <tr id="0">
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Curso</th>
+            <th>Ação</th>
+          </tr>
+        </table>
+      </section>
   </body>
 </html>

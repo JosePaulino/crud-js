@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.topo{
+.topo {
   width: 100%;
   height: 15vh;
   background-color: rgb(105, 46, 182);
@@ -13,14 +13,14 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#input-data{
+#input-data {
   width: 90vw;
   margin: 0 auto;
   margin-top: 5vh;
   display: flex;
 }
 
-.input-text{
+.input-text {
   flex: 1;
   min-width: 210px;
   height: 35px;
@@ -34,58 +34,62 @@
   outline: none;
 }
 
-.input-text:focus{  
-  border-color:  rgb(105, 46, 182);
+.input-text:focus {
+  border-color: rgb(105, 46, 182);
 }
 
-.input-btn{  
+.input-btn {
   flex: 1;
   margin: 5px;
   border-radius: 10px;
-  background-color:  rgb(105, 46, 182);
+  background-color: rgb(105, 46, 182);
   cursor: pointer;
   color: white;
   font-weight: bolder;
   transition: 0.3s all ease;
 }
 
-.input-btn:hover{
+.input-btn:hover {
   background-color: #383838;
   border-color: #383838;
 }
 
 
-.table{
+#myTable {
   width: 90%;
   margin: 0 auto;
   margin-top: 5vh;
   border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
-.table th{
+
+#myTable th {
   background-color: rgb(105, 46, 182);
   padding: 10px;
   color: white;
   font-weight: 100;
 }
 
-.table td, th{
+#myTable td,
+th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-.table td{
+#myTable td {
   padding: 5px;
 }
 
-.table tr:nth-child(even){
+#myTable tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.table tr:hover{
+#myTable tr:hover {
   background-color: #ddd;
 }
 
-.remove-btn{
+.remove-btn {
   width: 100%;
   height: 100%;
   text-align: center;

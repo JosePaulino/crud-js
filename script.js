@@ -1,13 +1,13 @@
 // Função para adcionar nova linha na tabela
 function addTabela() {
   //Define as variaveis e define os dados
-  let nome = document.getElementById('nome').value
-  let email = document.getElementById('email').value
-  let fone = document.getElementById('fone').value
-  let curso = document.getElementById('curso').value
-  let table = document.getElementById('Mytable')
+  let nome = document.getElementById('nome').value;
+  let email = document.getElementById('email').value;
+  let fone = document.getElementById('fone').value;
+  let curso = document.getElementById('curso').value;
+  let table = document.getElementById("myTable");
 
-  let tableSize = table.row.length // Calculando o tamanho da tabela
+  let tableSize = table.rows.length // Calculando o tamanho da tabela
   let row = table.insertRow(tableSize) //Inserindo uma linha abaixo da Tabela
   let cell1 = row.insertCell(0) // Inserindo as celulas da linha
   let cell2 = row.insertCell(1)
@@ -18,22 +18,21 @@ function addTabela() {
   row.id = tableSize //Adicionando o id no elemento a ser criado
 
   // Criando o codigo do botao para remover a linha
-  let btnCode =
-    "<button class='remove-btn' onclick='removeTable(this)'>Remover</button>"
+  let btnCode = "<button class='remove-btn' onclick='removeTable(this)'>Remover</button>"
 
   //Preenchendo as celulas da linha
-  cell1.innerHtml = tableSize
-  cell2.innerHtml = nome
-  cell3.innerHtml = email
-  cell4.innerHtml = fone
-  cell5.innerHtml = curso
-  cell6.innerHtml = btnCode
+  cell1.innerHtml = tableSize;
+  cell2.innerHtml = nome;
+  cell3.innerHtml = email;
+  cell4.innerHtml = fone;
+  cell5.innerHtml = curso;
+  cell6.innerHtml = btnCode;
 
   //Limpando os campos de insercao de dados
-  document.getElementById('nome').value = ''
-  document.getElementById('email').value = ''
-  document.getElementById('fone').value = ''
-  document.getElementById('curso').value = ''
+  document.getElementById('nome').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('fone').value = "";
+  document.getElementById('curso').value = "";
 
   //Retornando 'false' para impedir o reload da pagina
   return false
@@ -46,5 +45,6 @@ function removeTable(id) {
   row.parentNode.removeChild(row) //Removendo a linha
 
   //Retornando 'false' para impedir o reload da pagina
-  return false
+  return false 
 }
+
