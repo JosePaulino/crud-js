@@ -1,11 +1,11 @@
 // Função para adcionar nova linha na tabela
 function addTabela() {
   //Define as variaveis e define os dados
-  let nome = document.getElementById('nome').value;
-  let email = document.getElementById('email').value;
-  let fone = document.getElementById('fone').value;
-  let curso = document.getElementById('curso').value;
-  let table = document.getElementById("myTable");
+  let nome = document.getElementById('nome').value
+  let email = document.getElementById('email').value
+  let fone = document.getElementById('fone').value
+  let curso = document.getElementById('curso').value
+  let table = document.getElementById("myTable")
 
   let tableSize = table.rows.length // Calculando o tamanho da tabela
   let row = table.insertRow(tableSize) //Inserindo uma linha abaixo da Tabela
@@ -21,18 +21,18 @@ function addTabela() {
   let btnCode = "<button class='remove-btn' onclick='removeTable(this)'>Remover</button>"
 
   //Preenchendo as celulas da linha
-  cell1.innerHtml = tableSize;
-  cell2.innerHtml = nome;
-  cell3.innerHtml = email;
-  cell4.innerHtml = fone;
-  cell5.innerHtml = curso;
-  cell6.innerHtml = btnCode;
+  cell1.innerHTML = tableSize
+  cell2.innerHTML = nome
+  cell3.innerHTML = email
+  cell4.innerHTML = fone
+  cell5.innerHTML = curso
+  cell6.innerHTML = btnCode
 
   //Limpando os campos de insercao de dados
-  document.getElementById('nome').value = "";
-  document.getElementById('email').value = "";
-  document.getElementById('fone').value = "";
-  document.getElementById('curso').value = "";
+  document.getElementById('nome').value = ""
+  document.getElementById('email').value = ""
+  document.getElementById('fone').value = ""
+  document.getElementById('curso').value = ""
 
   //Retornando 'false' para impedir o reload da pagina
   return false

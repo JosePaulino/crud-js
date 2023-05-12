@@ -86,7 +86,7 @@ th {
 }
 
 #myTable tr:hover {
-  background-color: #ddd;
+  background-color: white;
 }
 
 .remove-btn {
@@ -94,6 +94,6 @@ th {
   height: 100%;
   text-align: center;
   border-width: 0px;
-  background-color: transparent;
   cursor: pointer;
+  background-color: rgb(235, 139, 139);
 }
